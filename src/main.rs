@@ -97,6 +97,8 @@ fn main() -> Result<()> {
                     }
                 }
             }
+
+            keyboard.terminate().expect("wrong termination");
         }
 
         Command::Led(LedCommand { index }) => {
